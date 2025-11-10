@@ -38,6 +38,12 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  sensors_plus: ^7.0.0
+  battery_plus: ^5.0.0 
+  geolocator: ^9.0.0
+  camera: ^0.10.0
+  permission_handler: ^11.4.0
+  vibration: ^3.1.4
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

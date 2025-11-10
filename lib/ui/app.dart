@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:bateria_application/ui/screens/battery_monitor_screen.dart';
+import 'package:bateria_application/ui/theme/app_theme.dart';
 
-class Bateria extends StatefulWidget {
-  const Bateria({super.key});
+class BateriaApp extends StatelessWidget {
+  const BateriaApp({super.key});
 
-  @override
-  State<Bateria> createState() => _BateriaState();
-}
-
-class _BateriaState extends State<Bateria> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      title: 'Monitor de Batería',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.darkTheme,
+      home: const BatteryMonitorScreen(),
+    );
   }
 }
