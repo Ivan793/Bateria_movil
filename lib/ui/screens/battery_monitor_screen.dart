@@ -6,7 +6,7 @@ import 'package:bateria_application/ui/widgets/battery_header.dart';
 import 'package:bateria_application/ui/widgets/battery_main_card.dart';
 import 'package:bateria_application/ui/widgets/battery_stats_grid.dart';
 import 'package:bateria_application/ui/widgets/low_battery_alert.dart';
-import 'package:bateria_application/ui/widgets/technical_info_card.dart';
+//import 'package:bateria_application/ui/widgets/technical_info_card.dart';
 
 class BatteryMonitorScreen extends StatefulWidget {
   const BatteryMonitorScreen({super.key});
@@ -92,16 +92,11 @@ class _BatteryMonitorScreenState extends State<BatteryMonitorScreen> {
                       if (_batteryInfo!.isLowBattery)
                         const LowBatteryAlert(),
                       const SizedBox(height: 20),
-                      const TechnicalInfoCard(),
+                      // const TechnicalInfoCard(),
                     ],
                   ),
                 ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: _loadBatteryInfo,
-        icon: const Icon(Icons.refresh),
-        label: const Text('Actualizar'),
       ),
     );
   }
